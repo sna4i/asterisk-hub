@@ -1,0 +1,32 @@
+:root{
+  --bg:#fbfbfd; --fg:#1a1a22; --muted:#6b6b78; --card:#ffffff; --line:#ececf1;
+  --accent:#5b5bd6; --radius:14px; --max:720px;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#0e0e12; --fg:#e9e9f0; --muted:#9a9aa8; --card:#16161c; --line:#26262f; --accent:#8b8bf0; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;
+  line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header.site,footer.site{max-width:var(--max);margin:0 auto;padding:20px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+header.site nav a,footer.site nav a{color:var(--muted);margin-left:16px;font-size:14px}
+.brand{font-weight:800;letter-spacing:.06em;color:var(--fg);font-size:19px}
+.brand .dot{color:var(--accent)}
+main{max-width:var(--max);margin:0 auto;padding:12px 22px 64px}
+.hero{padding:40px 0 8px}
+.eyebrow{color:var(--muted);letter-spacing:.14em;font-size:12px;text-transform:uppercase;margin:0 0 10px}
+h1{font-size:32px;line-height:1.25;margin:0 0 14px;letter-spacing:.01em}
+.lead{color:var(--muted);font-size:17px;margin:0 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+.app{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;color:inherit}
+.app:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-2px);transition:.15s}
+.app h2{margin:0 0 8px;font-size:20px}
+.app p{margin:0 0 16px;color:var(--muted);font-size:14px}
+.app .go{color:var(--accent);font-size:14px;font-weight:600}
+footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;margin-top:40px}
