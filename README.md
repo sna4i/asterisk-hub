@@ -7,7 +7,6 @@ its own subdomain.
 |------|------|
 | `index.html` | アプリ一覧（ixis / EIDOS / 今後） |
 | `privacy/`, `support/` | 旧 apex リンク救済：`ixis.asterisk.dpdns.org` の各ページへ 301 相当の redirect |
-| `app-ads.txt` | AdMob 認証（apex を開発者サイトに設定している間は必要） |
 | `CNAME` | `asterisk.dpdns.org` |
 
 ## アプリ追加
